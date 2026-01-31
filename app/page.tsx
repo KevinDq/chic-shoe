@@ -6,6 +6,13 @@ import ProductCard from "./chaussures/ProductCard";
 import { products } from "@/data/products";
 import { categories } from "@/data/categories";
 
+export const metadata = {
+  title: "Chic-Shoe – Chaussures femme élégantes & confortables",
+  description:
+    "Découvrez notre collection de chaussures pour femme : sneakers, sandales, bottines. Livraison rapide et qualité premium.",
+};
+
+
 function getRandomProducts(arr: typeof products, n: number) {
   const shuffled = [...arr].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, n);
