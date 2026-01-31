@@ -11,8 +11,8 @@ export default function Header() {
   const { totalQty } = useCart();
 
   return (
-    <header className="border-b bg-white">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+    <header className="border-b border-gray-400 bg-white h-30 lg:h-18">
+      <div className="container flex flex-wrap lg:flex-nowrap mx-auto px-4 h-16 items-center justify-between">
         
         <Link href="/">
           <Image src="/images/logo.png" alt="logo" width={120} height={40} />
@@ -41,3 +41,4 @@ export default function Header() {
     </header>
   );
 }
+
