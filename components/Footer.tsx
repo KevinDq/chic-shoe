@@ -18,7 +18,7 @@ export default function Footer() {
     <footer className="bg-gray-100 border-t mt-12">
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between gap-8">
         {/* Liens */}
-        <div className="flex flex-col gap-2">
+        <div className="flex items-center lg:items-start flex-col gap-2">
           <h3 className="font-semibold mb-2">Liens</h3>
           <Link href="/chaussures" className="hover:underline">Catalogue</Link>
           <Link href="/a-propos" className="hover:underline">À propos</Link>
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="flex flex-col items-center lg:items-start gap-2">
+        <div className="flex flex-col gap-2">
           <h3 className="font-semibold mb-2">Newsletter</h3>
           <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2">
             <input
@@ -55,4 +55,5 @@ export default function Footer() {
     </footer>
   );
 }
+
 
