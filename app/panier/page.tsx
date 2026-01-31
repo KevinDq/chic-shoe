@@ -47,7 +47,7 @@ export default function PanierPage() {
           return (
             <div
               key={`${item.productId}-${item.size}`}
-              className="flex items-center justify-between border p-4 bg-white"
+              className="flex flex-col lg:flex-row items-center justify-between border p-4 bg-white"
             >
               {/* Infos produit */}
               <div className="flex gap-2 items-center">
@@ -110,3 +110,4 @@ export default function PanierPage() {
     </div>
   );
 }
+
