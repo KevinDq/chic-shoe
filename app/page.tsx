@@ -27,7 +27,7 @@ export default function HomePage() {
       />    
 
       {/* Categories */}
-      <section id="discover" className="container mx-auto px-4 scroll-mt-20">
+      <section id="discover" className="container mx-auto px-2 lg:px-4 scroll-mt-6 lg:scroll-mt-20">
         <h2 className="text-2xl md:text-3xl font-playfair mb-8 text-center">
           Nos catégories
         </h2>
