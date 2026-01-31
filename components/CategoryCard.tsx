@@ -13,7 +13,7 @@ export default function CategoryCard({ name, image, link }: CategoryCardProps) {
   href={link}
   className="group relative block overflow-hidden rounded-lg shadow-sm hover:shadow-lg transition-shadow"
 >
-  <div className="relative w-full h-48 md:h-60">
+  <div className="relative w-full h-28 lg:h-48 md:h-60">
     <Image
       src={image}
       alt={name}
@@ -35,3 +35,4 @@ export default function CategoryCard({ name, image, link }: CategoryCardProps) {
 
   );
 }
+
