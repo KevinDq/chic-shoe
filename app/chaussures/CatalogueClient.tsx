@@ -48,7 +48,7 @@ export default function CatalogueClient() {
   };
 
   return (
-    <div className="p-4 space-y-6">
+    <div className="p-2 pt-0 lg:p-4 space-y-6">
       <div className="flex justify-end">
         <Filters
           colors={allColors}
@@ -78,3 +78,4 @@ export default function CatalogueClient() {
     </div>
   );
 }
+
