@@ -25,15 +25,21 @@ export default function CheckoutPage() {
   return (
     <div className="mx-auto p-6">
       <h1 className="text-3xl mb-6 text-center">Votre commande</h1>
-      <div className="flex justify-center gap-12">        
+      <div className="flex flex-col lg:flex-row justify-center gap-12">        
         <div className="grow relative">    
           <table className="w-full text-center border-collapse">   
             <thead>
               <tr className="border-b border-gray-400">
                 <th className="w-12"></th>
                 <th scope="col">Modèle</th>
-                <th scope="col">Pointure</th>
-                <th scope="col">Quantité</th>
+                <th scope="col" className="px-2">
+                  <span className="hidden lg:inline">Pointure</span>
+                  <span className="lg:hidden">Pt.</span>
+                </th>
+                <th scope="col" className="px-2">
+                  <span className="hidden lg:inline">Quantité</span>
+                  <span className="lg:hidden">Qté</span>
+                </th>
                 <th scope="col">Prix</th>
               </tr>
             </thead>
@@ -62,7 +68,7 @@ export default function CheckoutPage() {
             );
           })}
           </table>
-          <div className="absolute border-t border-gray-400 w-full bottom-0 right-0 text-right font-semibold text-lg">Total : {totalPrice} €</div>
+          <div className="lg:absolute border-t border-gray-400 w-full bottom-0 right-0 text-right font-semibold text-lg">Total : {totalPrice} €</div>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4 text-xs">
@@ -171,4 +177,5 @@ export default function CheckoutPage() {
     </div>
   );
 }
+
 
