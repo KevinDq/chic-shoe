@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col items-center lg:items-start gap-2">
           <h3 className="font-semibold mb-2">Newsletter</h3>
           <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2">
             <input
@@ -55,3 +55,4 @@ export default function Footer() {
     </footer>
   );
 }
+
