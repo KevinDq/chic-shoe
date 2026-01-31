@@ -24,14 +24,15 @@ export default function SearchBar() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative order-3 md:order-none mt-2">
       <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
       <input
         type="search"
         placeholder="    Rechercher une paire..."
-        className="w-80 border border-gray-300 px-4 py-2"
+        className="w-86 border border-gray-300 px-4 py-2"
         onChange={(e) => handleSearch(e.target.value)}
       />
     </div>
   );
 }
+
